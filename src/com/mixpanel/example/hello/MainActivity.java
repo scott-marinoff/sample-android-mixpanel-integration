@@ -50,11 +50,11 @@ public class MainActivity extends Activity {
      * - Click the gear icon in the lower left corner of the screen to view the settings dialog
      * - In the settings dialog, you will see the label "Token", and a string that looks something like this:
      *
-     *        2ef3c08e8466df98e67ea0cfa1512e9f
+     *        2ef3c08e8466fd98e67ea0cfa1512e9f
      *
      *   Paste it below (where you see "YOUR API TOKEN")
      */
-    public static final String MIXPANEL_API_TOKEN = "YOUR_MIXPANEL_TOKEN";
+    public static final String MIXPANEL_API_TOKEN = "scotty";
 
     /*
      * In order for your app to receive push notifications, you will need to enable
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
      * Once you have logged in, your sender id will appear as part of the URL in your browser's address bar.
      * The URL will look something like this:
      *
-     *     https://code.google.com/apis/console/b/0/#project:256660625236
+     *     https://code.google.com/apis/console/b/0/#project:256666025236
      *                                                       ^^^^^^^^^^^^
      *
      * The twelve-digit number after 'project:' is your sender id. Paste it below (where you see "YOUR SENDER ID")
@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
      * declare the permissions and receiver capabilities you'll need to get your push notifications working.
      * You can take a look at this application's AndroidManifest.xml file for an example of what is needed.
      */
-    public static final String ANDROID_PUSH_SENDER_ID = "GOOGLE_SENDER_ID";
+    public static final String ANDROID_PUSH_SENDER_ID = "339606701555";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -158,8 +158,9 @@ public class MainActivity extends Activity {
 
         // If you have notifications and you have set AutoShowMixpanelUpdates set to false,
         // the onResume function is a good place to call the functions to display your
-        // in app notifications. 
+        // in app notifications.
         mMixpanel.getPeople().showNotificationIfAvailable(this);
+        mMixpanel.getPeople().showSurveyIfAvailable(this);
     }
 
     // Associated with the "Send to Mixpanel" button in activity_main.xml
@@ -254,7 +255,7 @@ public class MainActivity extends Activity {
                     final Bitmap background = BitmapFactory.decodeStream(imageStream);
                     getWindow().setBackgroundDrawable(new BitmapDrawable(getResources(), background));
                 } catch (final FileNotFoundException e) {
-                    Log.e(LOGTAG, "Image apparently has gone away", e);
+                    Log.e(LOGTAG, "Image missing", e);
                 }
             }
         }
