@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "339606701555",
+    "firebase_url": "https://mixpanel-62362.firebaseio.com",
+    "project_id": "mixpanel-62362",
+    "storage_bucket": "mixpanel-62362.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339606701555:android:8a65284bb73b8a4a",
+        "android_client_info": {
+          "package_name": "com.mixpanel.example.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339606701555-ieikkosig2gkq006huvttro9pitgdcd0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW5J3a95D5KnHxC-W0HzzLdxaLMTv2vnk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
