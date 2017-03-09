@@ -11,9 +11,8 @@ The sample application can be build using either Android Studio or Eclipse.
 Integration in Android Studio is very simple.
 
 - Clone this git repository (the instructions are at the top of the page)
-- Within Android Studio, go to "File > Import Project"
+- Within Android Studio, go to "File > Open"
 - Select the directory you just cloned.
-- When the gradle popup shows up, choose "use gradle default wrapper (recommended)" and click OK
 
 You should now be able to run the sample application
 
