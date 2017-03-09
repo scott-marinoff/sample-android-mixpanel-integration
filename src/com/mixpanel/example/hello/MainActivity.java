@@ -156,10 +156,9 @@ public class MainActivity extends Activity {
             throw new RuntimeException("Could not encode hour of the day in JSON");
         }
 
-        // If you have surveys or notifications, and you have set AutoShowMixpanelUpdates set to false,
-        // the onResume function is a good place to call the functions to display surveys or
-        // in app notifications. It is safe to call both these methods right after each other,
-        // since they do nothing if a notification or survey is already showing.
+        // If you have notifications and you have set AutoShowMixpanelUpdates set to false,
+        // the onResume function is a good place to call the functions to display your
+        // in app notifications. 
         mMixpanel.getPeople().showNotificationIfAvailable(this);
     }
 
